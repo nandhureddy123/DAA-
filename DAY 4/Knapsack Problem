@@ -9,8 +9,6 @@ for r in range(len(weights) + 1):
         total_weight = sum(weights[i] for i in selection)
         if total_weight <= capacity:
             total_value = sum(values[i] for i in selection)
-            
-            
             if total_value > max_value:
                 max_value = total_value
                 best_selection = selection
